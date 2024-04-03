@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --primary: #065dfd;
+    --light: #fff;
+    --warning: #f06804;
+}
+
+/****** custom css ******/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/******** header css ********/
+header {
+    position: absolute;
+    z-index: 99999;
+    width:100%;
+}       
+.collapse .nav-item .nav-link {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.navbar-toggler {
+    outline: none !important;
+    border: none !important;
+    color: var(--warning);
+    box-shadow: none !important;
+    border-radius: none !important; 
+} 
+
+
+/******* section hero ******/
+.hero {
+    width: 100%;
+}
+.hero .carousel-item img {
+    height: 668px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.hero .carousel-item::before {
+    content: "";
+    background-color: #092250;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+}
+
+.hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.hero .carousel-content-container {
+    text-align: center;
+    color: #fff;
+}
+.hero .carousel-content-container h2 {
+    font-size: 50px;
+}
+.hero .carousel-content-container p {
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0 auto 30px auto;
+}
+
+.buttons .button1 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px 30px;
+    line-height: 1px;
+    margin: 10px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+.hero .carousel-content-container h2 {
+    font-size: 34px;
+}
+.hero .carousel-content-container p {
+    font-size: 13px;
+}
+    
+.buttons .button1 {
+    font-size: 13px;
+    padding: 9px 30px;
+}
+}
+
+
+/*********** Informação *************/
+.Informação .main-informação-box {
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+    position: relative;
+    padding: 20px 55px;
+    z-index: 1;
+    transform: .5s;
+    overflow: hidden;
+}
+.Informação .main-informação-box h3 {
+    margin-top: 20px;
+    font-weight: 200;
+    margin-bottom: 7px;
+    position: relative;
+}
+.Informação .main-informação-box p {
+    margin-top: 15px;
+    padding-bottom: 25px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+/*********** Sobre nós *************/
+.sobre {
+    position: relative;
+} 
+.sobre span {
+    display: block;
+    margin-bottom: 5px;
+    color: #065dfd;
+}
+.sobre h2 {
+    font-weight: 300;
+}
+
+.sobre P {
+    text-align: justify;
+}
+
+.buttons .button3 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px 25px;
+    line-height: 1px;
+    margin: 10px 10px;
+    color: #065dfd;
+    border: 1px solid #065dfd;
+    border-radius: 50px;
+}
+
+/*********** couser *************/
+.course .single-cousers-box {
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+.course .single-cousers-box h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+    position: relative;
+    font-weight: 200;
+}
+.course .single-cousers-box p{
+    padding: 0px 15px;
+    position: relative;
+}
+.course .single-cousers-box .buttons{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+}
+
+/***********  *************/
+.choose .choose-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.choose .choose-item {
+    padding: 10px;
+}
+.choose .choose-item p {
+    padding: 10px;
+}
+
+
+/********footer**************/
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .footer-widget {
+    padding: 20px;
+  }
+  .footer-widget h5 {
+    color: #ffffff;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  .footer-links ul li a {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  .footer-links ul li a:hover {
+    color: #ffffff;
+  }
